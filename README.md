@@ -26,8 +26,7 @@ time bin/Release/net8.0/osx-x64/publish/1brc measurements.txt
 ## Profiling
 
 ```bash
-dotnet-trace collect --duration 00:00:10 -- bin/Release/net8.0/osx-x64/publish/1brc measurements.txt
-dotnet-trace convert 1brc_yyyymmdd_hhmmss.nettrace --format Speedscope
+dotnet-trace collect --duration 00:00:10 --format Speedscope -- bin/Release/net8.0/osx-x64/publish/1brc measurements.txt
 ```
 
 Drag the resulting json file on to [https://www.speedscope.app](https://www.speedscope.app)
